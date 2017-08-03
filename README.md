@@ -6,14 +6,14 @@ today, web pages are very interactive, therefore why not extend it to terminal e
 # SYSTEM REQUIREMENTS
 
 To run this emulator you need these pre-installed:
-	- Node.JS v8
-	- Coffeescript
-	- Electron
-	- NPM
+* Node.JS v8
+* Coffeescript
+* Electron
+* NPM
 
 # How to run..??
 
 For running the terminal emulator you need to compile coffeescript files to js
 and move the following files as shown:
-	- main.js -> src/electron
-	- terminal.js -> src/js
+* main.js -> src/electron
+* terminal.js -> src/js
