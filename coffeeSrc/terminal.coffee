@@ -1,18 +1,10 @@
 os = require 'os'
 pty = require 'node-pty'
 
-options = {
-			cursorBlink: false
-		}
-# fitAddon = Terminal.loadAddon '../fit'
-
-term = new Terminal()
-
+term = new Terminal options
 term.open document.getElementById 'xterm-container'
-
 term.fit()
-# fitAddon.fit term
-
+term.focus()
 shell = process.env[if os.platform() == 'win32' then 'COMSPEC' else 'SHELL']
 
 ptyProcess = pty.spawn shell, [], {

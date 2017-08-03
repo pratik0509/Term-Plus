@@ -17,3 +17,5 @@ For running the terminal emulator you need to compile coffeescript files to js
 and move the following files as shown:
 * main.js -> src/electron
 * terminal.js -> src/js
+
+> **NOTE** : I have tested it only on arch linux.
