@@ -1,10 +1,11 @@
 os = require 'os'
 pty = require 'node-pty'
 
-term = new Terminal options
+term = new Terminal
 term.open document.getElementById 'xterm-container'
 term.fit()
 term.focus()
+
 shell = process.env[if os.platform() == 'win32' then 'COMSPEC' else 'SHELL']
 
 ptyProcess = pty.spawn shell, [], {
